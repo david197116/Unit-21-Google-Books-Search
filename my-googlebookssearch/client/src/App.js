@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
 function App() {
+  console.log('I am here');
   return (
     <Router>
       <div>

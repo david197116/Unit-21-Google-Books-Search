@@ -26,8 +26,9 @@ module.exports = {
   },
 
   getGoogleBooks: function (req, res) {
+    console.log('I am running');
     require('dotenv').config();
-    var book = req.params.input
+    var book = req.params.input;
     var secret = process.env.googleAPIKey;
     var url = ` https://www.googleapis.com/books/v1/volumes?q=${book}&key=${secret}`;
     axios.get(url)
@@ -36,3 +37,4 @@ module.exports = {
       })
   }
 };
+
