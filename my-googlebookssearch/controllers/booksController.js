@@ -16,6 +16,7 @@ module.exports = {
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+      // .catch(err => console.log(err));
   },
   remove: function (req, res) {
     db.Book
@@ -33,6 +34,7 @@ module.exports = {
     var url = ` https://www.googleapis.com/books/v1/volumes?q=${book}&key=${secret}`;
     axios.get(url)
       .then(function (response) {
+        console.log(response.data);
         res.json(response.data)
       })
   }
