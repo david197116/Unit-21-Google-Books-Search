@@ -1,0 +1,50 @@
+import React from "react";
+// import { Col, Row, Container } from "../components/Grid";
+// import Jumbotron from "../components/Jumbotron";
+// import React, { Component } from "react";
+// import Jumbotron from "../components/Jumbotron";
+// import Wrapper from "../components/Wrapper";
+// import { Col, Row, Container } from "../components/Grid";
+import ReactSignupLoginComponent from 'react-signup-login-component';
+
+import "../index.css";
+import "./Login.css";
+
+
+  
+
+const LoginPage = (props) => {
+
+
+
+   const signupWasClickedCallback = (data) => {
+    console.log(data);
+    alert('Signup callback, see log on the console to see the data.');
+  };
+  const loginWasClickedCallback = (data) => {
+    console.log(data);
+    alert('Login callback, see log on the console to see the data.');
+  };
+  const recoverPasswordWasClickedCallback = (data) => {
+    console.log(data);
+    alert('Recover password callback, see log on the console to see the data.');
+  };
+  return (
+    <div className="login">
+          <ReactSignupLoginComponent
+             
+              title="Welcome to Google Bood Search"
+              handleSignup={signupWasClickedCallback}
+              handleLogin={loginWasClickedCallback}
+              handleRecoverPassword={recoverPasswordWasClickedCallback}
+          />
+      </div>
+       
+  );
+
+
+};
+  
+
+
+export default LoginPage;

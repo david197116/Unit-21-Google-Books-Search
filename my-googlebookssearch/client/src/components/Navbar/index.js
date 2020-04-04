@@ -10,6 +10,12 @@ function Navbar() {
         Google Books Search
       </Link>
       <div className="navbar__nav">
+      <Link to="/register" className="navbar__nav--item">
+          Register
+        </Link>
+      <Link to="/login" className="navbar__nav--item">
+          Login
+        </Link>
         <Link to="/saved" className="navbar__nav--item">
           Saved
         </Link>

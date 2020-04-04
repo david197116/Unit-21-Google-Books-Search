@@ -1,0 +1,17 @@
+@media all and (min-width: 480px) {
+    .login {
+        
+      font-family: "Special Elite", cursive;
+      background: #ffcb9a;  
+      padding: 60px 0;
+    }
+  
+    .login form {
+        position: relative;
+        left: 15px;
+        border: 20px solid rgb(51, 35, 10);
+      background: #ffcb9a; 
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
